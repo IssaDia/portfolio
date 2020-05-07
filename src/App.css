@@ -1,38 +1,201 @@
-.App {
+.navbar {
+  background-color: #000000;
+  height: 100px;
+}
+
+.navbar strong {
+  color: #ffffff;
+  margin-left: 15px;
+  font-size: 30px;
+  font-family: 'Muli', sans-serif;
+}
+
+.navband-container span {
+  color: #473be7;
+  font-size: 30px;
+}
+
+.navband-container {
+  width: 50%;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+  color: #ffffff !important;
+  font-size: 15px !important;
+  font-family: 'Muli', sans-serif !important;
+}
+
+.navbar-nav {
+  flex-direction: row !important;
+  justify-content: stretch !important;
+
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding-right: 20px !important;
+
+
+}
+
+.navbar-nav a:hover {
+  color: #473be7 !important;
+}
+
+
+.landing-grid {
+  background: #833ab4;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  top: 50;
+  left: 0;
+  width: 100%;
+  height: 100%;
   text-align: center;
+  margin-top: 40px;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.avatar {
+  height: 280px;
+  border-radius: 5px 20px 5px;
+  margin-top: 80px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.banner-text {
+  background-color: #000000;
+  opacity: .8;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.banner-text h1 {
+  font-size: 70px;
+  color: #ffffff;
+  font-weight: bold;
+  padding-top: 30px;
+  ;
+}
+
+.banner-text hr {
+  border-top: 5px solid white;
+  width: 20%;
+  margin: auto;
+}
+
+.banner-text p {
+  font-size: 20px;
+  color: #ffffff;
+  padding: 1em;
+}
+
+.social-links {
+  width: 50%;
+  margin: auto;
+  padding-bottom: 20px;
+
+}
+
+.social-links a {
+  color: #ffffff;
+  font-size: 5em;
+  padding: 8px;
+}
+
+.contact-body {
+  margin: auto;
+  background-color: grey;
+  position: fixed;
+  width: 100%;
+  height: 100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 2em;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-grid {
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  height: 550px;
+  background-color: wheat;
+  color: #000000;
+  border: 2px solid red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact-grid h2 {
+  font-family: 'Anton', sans-serif;
+}
+
+.contact-grid p {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
+}
+
+.contact-grid hr {
+  border-top: 5px dotted black;
+  width: 50%;
+  margin: auto;
+}
+
+.contact-list i {
+  font-size: 66px;
+  padding-right: 5rem;
+
+}
+
+.projects-container{
+ text-align: center;
+}
+
+.projects-container h1 {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  padding-top: 120px;
+}
+
+.projects-container hr {
+  border-top: 5px solid black;
+  width: 20%;
+  margin:auto;
+  
+}
+
+.aboutme-container{
+  text-align: center;
+  background: #0f0c29;
+    background: -webkit-linear-gradient( to right, #24243e, #302b63, #0f0c29 );
+    background: linear-gradient( to right, #24243e, #302b63, #0f0c29 );
+ }
+ 
+ .aboutme-container h1 {
+   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   font-size: 50px;
+   font-weight: 700;
+   padding-top: 120px;
+   color: #ffffff;
+ }
+ 
+ .aboutme-container hr {
+   border-top: 5px solid #ffffff;
+   width: 20%;
+   margin:auto;
+   
+ }
+
+ .aboutme-container p {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  padding-top: 40px;
+  color: #ffffff;
+  margin: auto;
 }
