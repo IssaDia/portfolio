@@ -1,6 +1,17 @@
 .navbar {
   background-color: #000000;
-  height: 100px;
+  position: fixed !important;
+  width: 100%;
+  display: flex;
+  height: 80px;
+  top: 0;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  z-index: 4;
+
+
 }
 
 .navbar strong {
@@ -28,14 +39,18 @@
 
 .navbar-nav {
   flex-direction: row !important;
-  justify-content: stretch !important;
+  float: right;
 
+}
+
+.navbar-brand {
+  margin-left: 170px;
 }
 
 .navbar-nav .nav-link {
   color: #ffffff;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 16px;
   letter-spacing: 1px;
   padding-right: 20px !important;
 
@@ -110,92 +125,139 @@
   padding: 8px;
 }
 
-.contact-body {
-  margin: auto;
-  background-color: grey;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  padding-top: 2em;
-}
+.contact-container {
 
-.contact-grid {
   text-align: center;
-  justify-content: center;
-  width: 80%;
-  height: 550px;
-  background-color: wheat;
-  color: #000000;
-  border: 2px solid red;
+  padding-bottom: 60px;
 }
 
-.contact-grid h2 {
-  font-family: 'Anton', sans-serif;
+
+.contact-container h2 {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+  padding-top: 100px;
+  padding-bottom: 60px;
 }
 
-.contact-grid p {
-  font-family: 'Oxygen', sans-serif;
+.contact-container h3 {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: bold;
+  font-size: 18px;
+  margin: 0 auto 0;
+
 }
 
-.contact-grid hr {
-  border-top: 5px dotted black;
-  width: 50%;
+.contact-container p {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+
+}
+
+
+
+.contact-container i {
+  font-size: 4em;
+  color: #473be7;
   margin: auto;
-}
-
-.contact-list i {
-  font-size: 66px;
-  padding-right: 5rem;
 
 }
 
-.projects-container{
- text-align: center;
+.projects-container {
+  text-align: center;
 }
 
 .projects-container h1 {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 50px;
+  font-size: 3em;
   font-weight: 700;
-  padding-top: 120px;
+  padding-top: 100px;
 }
 
 .projects-container hr {
   border-top: 5px solid black;
   width: 20%;
-  margin:auto;
-  
+  margin: auto;
+
 }
 
-.aboutme-container{
+.aboutme-container {
   text-align: center;
   background: #0f0c29;
-    background: -webkit-linear-gradient( to right, #24243e, #302b63, #0f0c29 );
-    background: linear-gradient( to right, #24243e, #302b63, #0f0c29 );
- }
- 
- .aboutme-container h1 {
-   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-   font-size: 50px;
-   font-weight: 700;
-   padding-top: 120px;
-   color: #ffffff;
- }
- 
- .aboutme-container hr {
-   border-top: 5px solid #ffffff;
-   width: 20%;
-   margin:auto;
-   
- }
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+}
 
- .aboutme-container p {
+.aboutme-container h1 {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 25px;
+  font-size: 3em;
   font-weight: 700;
+  padding-top: 100px;
+  color: #ffffff;
+}
+
+.aboutme-container hr {
+  border-top: 5px solid #ffffff;
+  width: 20%;
+  margin: auto;
+
+}
+
+.aboutme-container p {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 25px;
   padding-top: 40px;
   color: #ffffff;
   margin: auto;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.location-container {
+  text-align: center;
+  background: #010920;
+  padding-bottom: 80px;
+}
+
+.location-container h1 {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+  padding-top: 100px;
+  color: #ffffff;
+}
+
+.location-container hr {
+  border-top: 5px solid #ffffff;
+  width: 20%;
+  margin: auto;
+
+}
+
+.location-container h3 {
+  color: #ffffff;
+  font-size: 14px;
+
+}
+
+.iframe {
+  border-radius: 20px;
+
+}
+
+/* Footer */
+
+
+.footer {
+  text-align: center;
+  background-color: #000;
+  height: 100px;
+}
+
+.footer h4 {
+  font-family: Raleway, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  padding-top: 40px;
 }
