@@ -15,10 +15,10 @@ const Landing = () => {
                         <hr></hr>
                         <p>HTML&CSS | Bootstrap | Javascript | React | Symfony | MySQL</p>
                         <div className='social-links'>
-                            <a href="https://google.com" target='_blank' rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/in/issa-dia-4352b174/" target='_blank' rel="noopener noreferrer">
                                 <i className='fa fa-linkedin-square' aria-hidden='true'></i>
                             </a>
-                            <a href="https://google.com" target='_blank' rel="noopener noreferrer">
+                            <a href="https://github.com/IssaDia/" target='_blank' rel="noopener noreferrer">
                                 <i className='fa fa-github-square' aria-hidden='true'></i>
                             </a>                       
                         </div>

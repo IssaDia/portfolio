@@ -6,20 +6,23 @@ import CV from '../Documents/IssaDevCv.pdf';
 const NavbarPortfolio = () => {
     return ( 
         <>
-            <nav className="navbar navbar-expand-lg">     
-                <div>
-                <Link to ='/' className="navbar-brand"><span><i className='fa fa-code' style={{color:'#473be7', fontSize:'30px'}}></i></span><strong>ISSA DIA</strong></Link>
-                </div>
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav">
+            <nav className="navbar navbar-expand-lg">
+            <a href ='/' className="navbar-brand"><span><i className='fa fa-code' style={{color:'#473be7', fontSize:'30px'}}></i></span><strong>ISSA DIA</strong></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">   
+                    <i class="fa fa-navicon"></i>
+                </span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul className="navbar-nav ml-auto">
                         <li className="nav-item">
-                        <Link className="nav-link" to = {CV} target = "_blank">CV</Link>
+                            <Link className="nav-link" to = {CV} target = "_blank">CV</Link>
                         </li>
                         <li className="nav-item">
-                        <Link className="nav-link" activeClassName='is-active'  to="#aboutme">A PROPOS DE  MOI</Link>
+                            <Link className="nav-link" activeClassName='is-active'  to="#aboutme">A PROPOS DE  MOI</Link>
                         </li>
                         <li className="nav-item">
-                        <Link className="nav-link"  to="#projects">PROJETS</Link>
+                            <Link className="nav-link"  to="#projects">PROJETS</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="#contact">CONTACT</Link>
@@ -27,6 +30,7 @@ const NavbarPortfolio = () => {
                     </ul>
                 </div>
              </nav>
+            
            
     </>
    
