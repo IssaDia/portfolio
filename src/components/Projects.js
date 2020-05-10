@@ -13,61 +13,62 @@ const Projects = () => {
         <div className='projects-container'>
             <h1>RECENT PROJECTS</h1>
             <hr />
-            <div class="container">
-        <div class="card">
-            <div class="face face1">
-                <div class="content">
-                    <div class="icon">
-                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            <div className="card-container row">
+
+            <div className="card">
+                <div className="face face1">
+                    <div className="content">
+                    <h4>The Mug Plug</h4>
+                    </div>
+                </div>
+                <div className="face face2">
+                    <div className="content">
+                    <h2>React/Symfony</h2>
+                    <p>E-commerce</p>
+                    <div className='link-container row'>
+                        <div className='col-md-6'><a href="" class="link">Site</a></div>
+                        <div className='col-md-6'><a href="https://github.com/IssaDia/TheMugPlugShop" class="link">Code</a></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div className="card">
+                <div className="face face1">
+                    <div className="content">
+                    <h4>Voyage Voyage</h4>
+                    </div>
+                </div>
+                <div className="face face2">
+                    <div className="content">
+                    <h2>Symfony</h2>
+                    <p>Blog de voyage</p>
+                    <div className='link-container row'>
+                        <div className='col-md-6'><a href="#0" class="link">Site</a></div>
+                        <div className='col-md-6'><a href="https://github.com/IssaDia/blogVoyageSymfony" class="link">Code</a></div>
+                    </div>
                     </div>
                 </div>
             </div>
-            <div class="face face2">
-                <div class="content">
-                    <h3>
-                        <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank">_adamdipinto</a>
-                    </h3>
-                    <p>This is where I network and build my professional protfolio.</p>
+            <div className="card">
+                <div className="face face1">
+                    <div className="content">
+                    <h4>The Hang Man</h4>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="face face1">
-                <div class="content">
-                    <div class="icon">
-                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                <div className="face face2">
+                    <div className="content">
+                        <h2>React</h2>
+                        <p>Jeu du pendu</p>
+                        <div className='link-container row'>
+                            <div className='col-md-6'><a href="#0" class="link">Site</a></div>
+                            <div className='col-md-6'><a href="https://github.com/IssaDia/penduReact" class="link">Code</a></div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="face face2">
-                <div class="content">
-                    <h3>
-                        <a href="https://twitter.com/AdamDipinto" target="_blank">@AdamDipinto</a>
-                    </h3>
-                    <p>This is where I read news and network with different social groups.</p>
-                </div>
-            </div>
         </div>
-        <div class="card">
-            <div class="face face1">
-                <div class="content">
-                    <div class="icon">
-                        <i class="fa fa-github-square" aria-hidden="true"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <h3>
-                        <a href="https://github.com/atom888" target="_blank">atom888</a>
-                    </h3>
-                    <p>This is where I share code and work on projects.</p>
-                </div>
-            </div>
-        </div>
-    </div>
              
-        </div>
+    </div>
      );
 }
  

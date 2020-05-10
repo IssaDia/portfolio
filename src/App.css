@@ -155,7 +155,7 @@
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 3em;
   font-weight: 700;
-  padding-top: 100px;
+  padding-top: 80px;
   padding-bottom: 60px;
 }
 
@@ -203,71 +203,52 @@
 
 /* Card */
 
-.container {
-  width: 1000px;
+.card-container {
+  margin-top: 80px;
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin-bottom: 80px;
 }
 
-.container .card {
+.card-container .card {
   position: relative;
   border-radius: 10px;
+  border: none !important;
+  margin-bottom: 20px;
 }
 
-.container .card .icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #f00;
-  transition: 0.7s;
-  z-index: 1;
-}
+.card-container .card h2 {
 
-.container .card:nth-child(1) .icon {
-  background: #e07768;
+  color: #000000;
+  line-height: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  padding-top: 0;
+  margin-top: 0;
 }
+.card-container .card span {
+  font-size: 14px;
+  color: #262626;
 
-.container .card:nth-child(2) .icon {
-  background: #6eadd4;
-}
-
-.container .card:nth-child(3) .icon {
-  background: #4aada9;
 }
 
 
-.container .card .icon .fa {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 80px;
-  transition: 0.7s;
-  color: #fff;
-}
-
-i {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 80px;
-  transition: 0.7s;
-  color: #fff;
-}
-
-.container .card .face {
+.card-container .card .face {
   width: 300px;
   height: 200px;
   transition: 0.5s;
+  
 }
 
-.container .card .face.face1 {
+.card-container .card .face.face1 {
   position: relative;
-  background: #333;
+  
+  background: #232526;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -275,60 +256,118 @@ i {
   transform: translateY(100px);
 }
 
-.container .card:hover .face.face1{
-  background: #ff0057;
+.card-container .card:hover .face.face1 {
+  background: #4b6cb7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   transform: translateY(0px);
 }
 
-.container .card .face.face1 .content {
+.card-container .card .face.face1 .content {
   opacity: 1;
   transition: 0.5s;
+  
 }
 
-.container .card:hover .face.face1 .content {
+.card-container .card:hover .face.face1 .content {
   opacity: 1;
 }
 
-.container .card .face.face1 .content i{
-  max-width: 100px;
+.card-container .card .face.face1 .content h4 {
+  color: #ffffff;
+  font-family: 'Galada', cursive;
+
 }
 
-.container .card .face.face2 {
+.card-container .card .face.face2 {
   position: relative;
-  background: #fff;
+  background: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
   transform: translateY(-100px);
 }
 
-.container .card:hover .face.face2{
+.card-container .card:hover .face.face2 {
   transform: translateY(0);
 }
 
-.container .card .face.face2 .content p {
+.card-container .card .face.face2 .content p {
   margin: 0;
   padding: 0;
   text-align: center;
   color: #414141;
+  font-style: italic;
+  font-size:12px;
+  margin-top: 10px;
 }
 
-.container .card .face.face2 .content h3 {
-  margin: 0 0 10px 0;
-  padding: 0;
-  color: #fff;
-  font-size: 24px;
-  text-align: center;
-  color: #414141;
-} 
+.link-container {
+  margin-top: 20px;
+}
 
-.container a {
+
+.link{
+	color: #000000 !important;
+	font-size: 16px;
+	font-weight: 700;
+  display: flex;
+  justify-content: space-around;
+	text-decoration: none !important;
+  text-transform: uppercase;
+  margin-right:60px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+/*
+* These styles creates the underlining of link
+*/
+
+.link{
+	position: relative;
+	z-index: 1;
+	display: inline-flex;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	padding-right: 10px;
+}
+
+.link::before{
+	content: "";
+	width: 0;
+	height: 100%;
+  background-image: linear-gradient(to top, #fed330 25%, rgba(0, 0, 0, 0) 40%);
+	position: absolute;
+	left: 0;
+	bottom: 2px;
+	z-index: -1;
+	will-change: width;
+	transform: rotate(-2deg);
+	transform-origin: left bottom
+}
+
+.link:hover::before{
+  width: 100%;
+}
+
+/*
+* animation styles
+*/
+
+.link::before{
+  transition: width .1s ease-out;
   text-decoration: none;
-  color: #414141;
 }
+
+.link:hover::before{
+  transition-duration: .15s;
+  text-decoration: none;
+}
+
 
 
 
@@ -337,8 +376,8 @@ i {
 .aboutme-container {
   text-align: center;
   background: #0f0c29;
-  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
-  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: -webkit-linear-gradient(to right, #4b6cb7, #302b63, #0f0c29);
+  background: linear-gradient(to right, #4b6cb7, #302b63, #0f0c29);
 }
 
 .aboutme-container h1 {
@@ -371,6 +410,8 @@ i {
 .location-container {
   text-align: center;
   background: #010920;
+  background: -webkit-linear-gradient(to right, #010920, #302b63, #000000);
+  background: linear-gradient(to right, #010920, #302b63, #000000);
   padding-bottom: 80px;
 }
 

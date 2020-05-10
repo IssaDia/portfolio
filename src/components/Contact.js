@@ -3,7 +3,7 @@ import React from 'react';
 const Contact = () => {
     return ( 
         <div className='contact-container'>  
-          <h2>CONTACT</h2>
+          <h2>ME CONTACTER</h2>
           <div className='contact-list'>
             <div className='contact-item col-md-4'>
                 <i className='fa fa-phone-square'></i>
