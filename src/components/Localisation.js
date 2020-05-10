@@ -4,7 +4,7 @@ import Iframe from './Iframe'
 const Localisation = () => {
     return ( 
         <div className='location-container'>
-        <h1>LOCALISATION ACTUELLE</h1>
+        <h1>CURRENT LOCATION</h1>
         <hr />
             <div>
                 <h3>Lyon, Rhône Alpes</h3>

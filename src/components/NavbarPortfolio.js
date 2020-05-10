@@ -16,13 +16,13 @@ const NavbarPortfolio = () => {
                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item">
-                            <Link className="nav-link" to = {CV} target = "_blank">CV</Link>
+                            <Link className="nav-link" to = {CV} target = "_blank">RESUME</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" activeClassName='is-active'  to="#aboutme">A PROPOS DE  MOI</Link>
+                            <Link className="nav-link" activeClassName='is-active'  to="#aboutme">ABOUT ME</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link"  to="#projects">PROJETS</Link>
+                            <Link className="nav-link"  to="#projects">PROJECTS</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="#contact">CONTACT</Link>
@@ -30,7 +30,6 @@ const NavbarPortfolio = () => {
                     </ul>
                 </div>
              </nav>
-            
            
     </>
    
