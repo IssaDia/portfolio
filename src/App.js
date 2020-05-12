@@ -12,7 +12,7 @@ import Footer from './components/Footer'
 
 function Homepage() {
   return (
-    <>
+    <div className='container-fluid'>
     <NavbarPortfolio />
     <LandingPage />
     <div id='projects'>
@@ -26,7 +26,7 @@ function Homepage() {
      </div>
      <Localisation />
     <Footer />
-    </>
+    </div>
   );
 }
 

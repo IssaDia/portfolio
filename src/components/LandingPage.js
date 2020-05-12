@@ -1,14 +1,13 @@
 import React from 'react'
-import { Grid, Cell } from 'react-mdl'
 import CvImage from '../assets/images/profile.jpg'
 
 
 
 const Landing = () => {
     return ( 
-        <div>
-            <Grid className='landing-grid'>
-                <Cell col={12}>
+        <div className='row'>
+            <div className='landing-grid col-md-12'>
+                <div>
                     <img src={CvImage} className='avatar' alt='avatar' />
                     <div className='banner-text'>
                         <h1>FULL STACK WEB DEVELOPER</h1>
@@ -23,8 +22,8 @@ const Landing = () => {
                             </a>                       
                         </div>
                     </div>
-                </Cell>
-            </Grid>
+                </div>
+            </div>
         </div>
      );
 }
